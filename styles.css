@@ -1,0 +1,65 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 100%; /* 전체 너비 */
+    height: 100%; /* 전체 높이 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 수직 가운데 정렬 */
+    align-items: center; /* 수평 가운데 정렬 */
+}
+
+.click-area {
+    padding: 100px 200px; /* 버튼 크기 확대 */
+    font-size: 36px; /* 글자 크기 증가 */
+    margin: 20px; /* 버튼 주변 여백 증가 */
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.click-area:hover {
+    background-color: #0056b3;
+}
+
+button {
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* 추가된 CSS: 전체 화면을 가로로 늘리기 위한 설정 */
+@media (min-width: 768px) {
+    .container {
+        width: 80%; /* 가로 너비를 80%로 설정 */
+        max-width: 1200px; /* 최대 너비 제한 */
+    }
+    .click-area {
+        padding: 100px 300px; /* 버튼 크기 조정 */
+    }
+}
